@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Berry Chen | Projects</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0d1117;
+      color: #e6edf3;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 60px 24px 40px;
+      text-align: center;
+      border-bottom: 1px solid #21262d;
+    }
+
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      border: 3px solid #30363d;
+      margin-bottom: 16px;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #f0f6fc;
+    }
+
+    header p {
+      margin-top: 8px;
+      color: #8b949e;
+      font-size: 0.95rem;
+    }
+
+    .social-links {
+      margin-top: 16px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .social-links a {
+      color: #58a6ff;
+      text-decoration: none;
+      font-size: 0.9rem;
+      padding: 4px 12px;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .social-links a:hover {
+      border-color: #58a6ff;
+      background: #161b22;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 48px auto;
+      padding: 0 24px;
+    }
+
+    .section-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #8b949e;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 20px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 10px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      transition: border-color 0.2s, transform 0.15s;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card:hover {
+      border-color: #58a6ff;
+      transform: translateY(-2px);
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .card-icon {
+      font-size: 1.3rem;
+    }
+
+    .card-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #58a6ff;
+    }
+
+    .card-desc {
+      font-size: 0.875rem;
+      color: #8b949e;
+      line-height: 1.5;
+      flex: 1;
+    }
+
+    .card-footer {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .lang-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .lang-label {
+      font-size: 0.8rem;
+      color: #8b949e;
+    }
+
+    .tag {
+      font-size: 0.75rem;
+      padding: 2px 8px;
+      border-radius: 12px;
+      border: 1px solid #30363d;
+      color: #8b949e;
+      margin-left: auto;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 24px;
+      color: #484f58;
+      font-size: 0.8rem;
+      border-top: 1px solid #21262d;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img
+    class="avatar"
+    src="https://github.com/berrychen1991.png"
+    alt="Berry Chen"
+  />
+  <h1>Berry Chen</h1>
+  <p>berrychen1991 · 軟體開發 / 資料工程</p>
+  <div class="social-links">
+    <a href="https://github.com/berrychen1991" target="_blank">GitHub</a>
+  </div>
+</header>
+
+<main>
+  <p class="section-title">Projects</p>
+  <div class="projects-grid">
+
+    <a class="card" href="https://github.com/berrychen1991/0050cal" target="_blank">
+      <div class="card-header">
+        <span class="card-icon">💰</span>
+        <span class="card-title">0050cal</span>
+      </div>
+      <p class="card-desc">財務計算器，支援房貸試算與投資報酬率計算。</p>
+      <div class="card-footer">
+        <span class="lang-dot" style="background:#e34c26"></span>
+        <span class="lang-label">HTML</span>
+      </div>
+    </a>
+
+    <a class="card" href="https://github.com/berrychen1991/numerology-calculator" target="_blank">
+      <div class="card-header">
+        <span class="card-icon">🔢</span>
+        <span class="card-title">numerology-calculator</span>
+      </div>
+      <p class="card-desc">數字命理計算器，根據生日與姓名推算命理數字。</p>
+      <div class="card-footer">
+        <span class="lang-dot" style="background:#e34c26"></span>
+        <span class="lang-label">HTML</span>
+      </div>
+    </a>
+
+    <a class="card" href="https://github.com/berrychen1991/Fixed-point-Base-Converter" target="_blank">
+      <div class="card-header">
+        <span class="card-icon">⚙️</span>
+        <span class="card-title">Fixed-point-Base-Converter</span>
+      </div>
+      <p class="card-desc">定點數進制轉換工具，支援二進位、八進位、十六進位互轉。</p>
+      <div class="card-footer">
+        <span class="lang-dot" style="background:#e34c26"></span>
+        <span class="lang-label">HTML</span>
+      </div>
+    </a>
+
+    <a class="card" href="https://github.com/berrychen1991/ChatGPT-Line-Bot" target="_blank">
+      <div class="card-header">
+        <span class="card-icon">🤖</span>
+        <span class="card-title">ChatGPT-Line-Bot</span>
+      </div>
+      <p class="card-desc">將 ChatGPT 接入 Line 的聊天機器人，快速部署 AI 對話功能。</p>
+      <div class="card-footer">
+        <span class="lang-dot" style="background:#3572A5"></span>
+        <span class="lang-label">Python</span>
+        <span class="tag">Fork</span>
+      </div>
+    </a>
+
+    <a class="card" href="https://github.com/berrychen1991/pytorch-cifar100" target="_blank">
+      <div class="card-header">
+        <span class="card-icon">🧠</span>
+        <span class="card-title">pytorch-cifar100</span>
+      </div>
+      <p class="card-desc">用 PyTorch 在 CIFAR-100 上練習多種深度學習模型，包含 ResNet、VGG、MobileNet 等。</p>
+      <div class="card-footer">
+        <span class="lang-dot" style="background:#3572A5"></span>
+        <span class="lang-label">Python</span>
+        <span class="tag">Fork</span>
+      </div>
+    </a>
+
+  </div>
+</main>
+
+<footer>
+  © 2026 Berry Chen · Built with GitHub Pages
+</footer>
+
+</body>
+</html>
